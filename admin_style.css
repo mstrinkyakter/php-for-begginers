@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --space:2rem;
+    --background-color:#29282c;
+    --box-shadow:0px 5px 10px 2px rgb(0 0 0/5%);
+    --box-shadow2:0px 0px 0px 6px rgb(255 255 255/40%);
+    --bg-color2:#35353a;
+    --bg-color1:#3f3f44;
+    --bg-color3:#e2e2e244;
+    --orange:#f7b90f;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:var(--background-color) ;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.btn, .option-btn{
+    color: #000;
+    text-transform: uppercase;
+    background: var(--orange);
+    border-radius: 3px;
+    padding: 1rem 2.6rem;
+    font-size: 14px;
+    font-weight: bold;
+    transition: .3s;
+}
+.btn:hover{
+    box-shadow: var(--box-shadow);
+}
+.option-btn{
+    background: #000;
+    color:#fff ;
+    cursor: pointer;
+    transition: .3s;
+}
+.empty,
+.message{
+    border-radius: .5rem;
+    background: var(--bg-color1);
+    padding: 1.5rem;
+    text-align: center;
+    font-weight: 100%;
+    font-size: 2rem;
+    text-transform: capitalize;
+    line-height: 2;
+    color: #fff;
+}
+input,
+select,
+textarea{
+    background: rgba(255,255,255,0.04);
+    padding: 1rem;
+    border: none;
+    border-top: 1px solid var(--bg-color2);
+    outline: none;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+}
+button{
+    text-align: center;
+    outline: none;
+    border: none;
+}
+select option{
+    color: #000 !important;
+}
+input{
+    text-transform: capitalize;
+    margin: 1rem 0;
+}
+form label{
+    text-transform: uppercase;
+    margin:1rem 0;
+    color: #fff;
+}
+form sup{
+    color: red;
+}
+/* -------------suctom scroll bar ---------------- */
+::-webkit-scrollbar{
+    width: 4px;
+}
+::-webkit-scrollbar-thumb{
+    -webkit-border-radius:20px;
+    border-radius: 20px;
+    height: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: #6d6d6d;
+    position: relative;
+}
+::-webkit-scrollbar-track{
+    background: transparent;
+    -webkit-border-radius:20px;
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+/* ------------login--------------- */
+#admin_login{
+    margin: 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+#admin_login .btn{
+    width: 100%;
+}
+.form-container form{
+     background: var(--bg-color1);
+     border-radius: .5rem;
+     padding: 2rem;
+     box-shadow: var(--box-shadow);
+     width:50vw;
+     margin: 0 auto;
+     padding-top: 1rem;
+}
+form h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color:var(--orange) ;
+}
+form span{
+    color: var(--orange);
+}
+.form-container form input[type="submit"]{
+    width:49%;
+    cursor: pointer;
+    margin: .5rem;
+}
